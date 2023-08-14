@@ -7,7 +7,7 @@ const get = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    const cardData = req.body; // Assumindo que os dados do cartão estão no corpo da solicitação
+    const cardData = req.body;
     const cardId = await facade.create(cardData);
     return res
       .status(201)
