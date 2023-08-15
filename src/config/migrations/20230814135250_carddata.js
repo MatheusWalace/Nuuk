@@ -7,6 +7,7 @@ exports.up = function (knex) {
     table.increments("id").primary();
     table.string("card_number", 16).notNullable();
     table.integer("expiration_date", 7).notNullable();
+    table.string("cpf").notNullable();
     table.integer("cvv", 4);
     table.string("card_name").notNullable();
     table.timestamps(true, true);
