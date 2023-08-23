@@ -1,4 +1,4 @@
-const route = "/produtos";
+const route = "/produto";
 const api = require("../api/produtos");
 
 module.exports = (router) => {
