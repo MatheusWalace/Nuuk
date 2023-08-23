@@ -1,5 +1,5 @@
-const route = "/cardData";
-const api = require("../api/cardData");
+const route = "/user";
+const api = require("../api/user");
 
 module.exports = (router) => {
   router.route(route).get(api.get).post(api.create);

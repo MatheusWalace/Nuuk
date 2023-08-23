@@ -1,4 +1,4 @@
-const facade = require("../facade/cardData");
+const facade = require("../facade/user");
 
 const get = async (req, res) => {
   const result = await facade.get();
@@ -7,8 +7,8 @@ const get = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    const cardData = req.body;
-    const cardId = await facade.create(cardData);
+    const user = req.body;
+    const cardId = await facade.create(user);
     return res
       .status(201)
       .json({ id: cardId, message: "Cartão criado com sucesso." });
